@@ -57,9 +57,9 @@
 <li class="toctree-l2 current"><a class="reference internal" href="export-mnn.html">Export to mnn</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Export streaming Zipformer transducer models to MNN</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#download-the-pre-trained-model">1. Download the pre-trained model</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#install-mnn">1. Install MNN</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#export-the-model-to-onnx">2. Export the model to ONNX</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#convert-model-from-onnx-to-mnn">3. Convert model from onnx to MNN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-mnn">2. Install MNN</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#export-the-model-to-onnx">3. Export the model to ONNX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#convert-model-from-onnx-to-mnn">4. Convert model from onnx to MNN</a></li>
 </ul>
 </li>
 </ul>
@@ -134,7 +134,7 @@ git<span class="w"> </span>clone<span class="w"> </span>https://huggingface.co/p
 <code class="docutils literal notranslate"><span class="pre">egs/librispeech/ASR/k2fsa-zipformer-bilingual-zh-en-t</span></code>.</p>
 </section>
 <section id="install-mnn">
-<span id="export-for-mnn-install-mnn"></span><h2>1. Install MNN<a class="headerlink" href="#install-mnn" title="Permalink to this heading"></a></h2>
+<span id="export-for-mnn-install-mnn"></span><h2>2. Install MNN<a class="headerlink" href="#install-mnn" title="Permalink to this heading"></a></h2>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># We put MNN into $HOME/open-source/MNN</span>
 <span class="c1"># You can change it to anywhere you like</span>
 
@@ -176,7 +176,7 @@ it to convert models from <code class="docutils literal notranslate"><span class
 </div></blockquote>
 </section>
 <section id="export-the-model-to-onnx">
-<h2>2. Export the model to ONNX<a class="headerlink" href="#export-the-model-to-onnx" title="Permalink to this heading"></a></h2>
+<h2>3. Export the model to ONNX<a class="headerlink" href="#export-the-model-to-onnx" title="Permalink to this heading"></a></h2>
 <p>First, let us rename our pre-trained model:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">egs</span><span class="o">/</span><span class="n">librispeech</span><span class="o">/</span><span class="n">ASR</span>
 
@@ -231,7 +231,7 @@ and select the best combination with with <code class="docutils literal notransl
 </div>
 </section>
 <section id="convert-model-from-onnx-to-mnn">
-<span id="zipformer-transducer-step-4-export-torchscript-model-via-pnnx"></span><h2>3. Convert model from onnx to MNN<a class="headerlink" href="#convert-model-from-onnx-to-mnn" title="Permalink to this heading"></a></h2>
+<span id="zipformer-transducer-step-4-export-torchscript-model-via-pnnx"></span><h2>4. Convert model from onnx to MNN<a class="headerlink" href="#convert-model-from-onnx-to-mnn" title="Permalink to this heading"></a></h2>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>Make sure you have set up the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> environment variable
